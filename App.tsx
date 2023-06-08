@@ -6,6 +6,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from './src/pages/Home';
 import Settings from './src/pages/Settings';
 import HomeDetail from './src/pages/Home/detail';
+import HomeVideo from './src/pages/Home/video';
 
 function TabScreen() {
   const Tab = createBottomTabNavigator();
@@ -28,6 +29,7 @@ function App(): JSX.Element {
           options={{headerShown: false}}
         />
         <Stack.Screen name="Details" component={HomeDetail} />
+        <Stack.Screen name="Video" component={HomeVideo} />
       </Stack.Navigator>
     </NavigationContainer>
   );

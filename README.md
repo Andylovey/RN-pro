@@ -10,3 +10,15 @@
 
 # 项目路由
 使用react-navigation[react-navigation](https://reactnavigation.org/docs/7.x/getting-started)
+
+# 添加项目地理定位
+1. yarn add @react-native-community/geolocation
+2. 在info.plist添加
+<key>NSLocationAlwaysUsageDescription</key>
+<string>This app requires access to you location.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app requires access to you location.</string>
+3. 删除podfile.lock和pods，再pod install
+
+
+
