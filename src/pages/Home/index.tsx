@@ -16,6 +16,10 @@ function Home({navigation}) {
         title="Go to Video"
         onPress={() => navigation.navigate('Video')}
       />
+      <Button
+        title="Go to Music"
+        onPress={() => navigation.navigate('Music')}
+      />
     </View>
   );
 }

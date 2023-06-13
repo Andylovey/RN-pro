@@ -7,6 +7,7 @@ import Home from './src/pages/Home';
 import Settings from './src/pages/Settings';
 import HomeDetail from './src/pages/Home/detail';
 import HomeVideo from './src/pages/Home/video';
+import HomeMusic from './src/pages/Home/Music';
 
 function TabScreen() {
   const Tab = createBottomTabNavigator();
@@ -30,6 +31,7 @@ function App(): JSX.Element {
         />
         <Stack.Screen name="Details" component={HomeDetail} />
         <Stack.Screen name="Video" component={HomeVideo} />
+        <Stack.Screen name="Music" component={HomeMusic} />
       </Stack.Navigator>
     </NavigationContainer>
   );
